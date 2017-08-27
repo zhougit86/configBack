@@ -1,0 +1,19 @@
+CREATE TABLE IF NOT EXISTS `Object`(
+   `service_name` VARCHAR(20) NOT NULL,
+   `object_name` VARCHAR(20) NOT NULL,
+   `object_type` VARCHAR(20) NOT NULL,
+   `min_num` SMALLINT NOT NULL,
+   `max_num` SMALLINT NOT NULL,
+   `support_ops` VARCHAR(50) NOT NULL,
+   `ops_with_script` VARCHAR(50) NOT NULL,
+   `adm_visible` VARCHAR(50) NOT NULL,
+   `eng_name` VARCHAR(30) NOT NULL,
+   `chn_name` VARCHAR(30) NOT NULL,
+   PRIMARY KEY ( `object_name` )
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `Easy`(
+   `Name` VARCHAR(20) NOT NULL,
+
+   PRIMARY KEY ( `Name` )
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
