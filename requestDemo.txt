@@ -1,0 +1,5 @@
+{"ServiceName":"Test","ObjectName":"IP2",
+	"ObjectType":"Peizhi","MinNum":0,"MaxNum":10,"SupportOps":"get;set",
+		"OpsWithScript":"get;set","AdmVisible" :"Yes","EngName":"IP Config",
+		"ChnName":"C IP Config"
+	}

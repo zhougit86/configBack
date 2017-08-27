@@ -53,7 +53,10 @@ func (c *CfgController) Post() {
 
 	o:= orm.NewOrm()
 
-	fmt.Println(o.Insert(&Obj))
+	_,err:=o.Insert(&Obj)
+	if err!=nil{
+		c.Abort("500")
+	}
 
 	c.Ctx.WriteString("received")
 }
